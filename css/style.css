@@ -718,13 +718,14 @@ span.name {
 
 
 
-@media (max-width: 1200px){ 
+@media (max-width: 1200px) { 
     body    {
         background-size: contain;
         width: 100%;
     }
 
     .header {
+        height: 500px !important;
         width: 100%;
     }
 
