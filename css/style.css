@@ -2,6 +2,7 @@ body {
     font-size: 10px;
     font-family: 'Lato', sans-serif;
     background-color: white;
+    background-size: auto;
 }
 
 
@@ -10,10 +11,6 @@ body {
 header {
     background-image: url("img/bg-header-dark.png");
     height: 950px;
-}
-
-tr, td {
-    position: relative;
 }
 
 .header_top {
@@ -128,6 +125,10 @@ tr, td {
 
 /*---------------------------------domain---------------------------------*/
 
+tr, td {
+    position: relative;
+}
+
 .domain {
     min-height: 400px;
     width: 890px;
@@ -171,7 +172,7 @@ tr, td {
 }
 
 .domain_input input {
-    width: 715px;
+    width: 700px;
     font-size: 1.1rem;
     margin-left: 15px;
 }
@@ -228,13 +229,13 @@ tr, td {
 /*---------------------------------packages---------------------------------*/
 
 .packages {
+    width: 100%;
     min-height: 380px;
     background-image: url("img/bg-packages-dark.png");
     position: relative;
 }
 
-.packages h2,
-p {
+.packages h2, p {
     font-size: 1.1rem;
 }
 
@@ -250,6 +251,7 @@ p {
     margin-right: auto;
     left: 0;
     right: 0;
+    font-size: 0;
 }
 
 .packages_items div {
@@ -712,5 +714,114 @@ footer a:hover {
 span.name {
    color: #8a8a8a;
    font-weight: 500;
+}
+
+
+
+@media (max-width: 1200px){ 
+    body    {
+        background-size: contain;
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .header_top nav  {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .header_top nav a+a {
+        margin-left: 20px;
+    }
+
+    .member a {
+        padding-left: 200px;
+    }
+
+    .packages_items {
+        width: 1000px;
+    }
+
+    .packages_items>div {
+        width: 180px;
+        vertical-align: top;
+    }
+
+    .packages_items_basic {
+        margin-left: 40px;
+    }
+
+    .package_icon {
+        width: 180px !important;
+    }
+
+    .packages h2, p {
+        font-size: 0.8rem;
+    }  
+
+    .aboutus {
+        width: 1000px;
+        
+    } 
+
+    .aboutus_info {
+        padding-right: 20px;
+    }
+
+    .aboutus_designers>div {
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .aboutus_designers_doe img {
+        width: 80px;
+    }
+
+    .aboutus_designers_doe p {
+        font-size: 0.8rem;
+    }
+
+    .aboutus_designers_doe a {
+        margin: 4px;
+    }
+
+    .functions {
+        width: 1000px; 
+    }
+
+    .functions > div {
+        width: 200px;
+        margin-left: 23px;
+        margin-right: 23px;
+        font-size: 0.8em !important;
+    }
+
+    .item_icon {
+        margin-left: 60px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer_top nav  {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .footer_top nav a+a {
+        margin-left: 20px;
+    }
+
+    .footer_bottom_contacts p{
+        font-size: 0.8rem;
+}
 }
 
